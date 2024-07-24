@@ -15,11 +15,11 @@ jobs:
     steps:
     
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
     
       - name: get version
         id: version
-        uses: notiz-dev/github-action-json-property@a5a9c668b16513c737c3e1f8956772c99c73f6e8
+        uses: zoexx/github-action-json-file-properties@d02f28167f05bf70cd75352b11c25a4e8c39bf38
         with: 
             path: "package.json"
             prop_path: "version"
